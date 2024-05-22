@@ -20,9 +20,9 @@ app.use(express.json())
 
 // routes -------------------------------------------
 app.get('/', (req, res)=>{
-    res.send('Welcome to my API')
+    res.send('Welcome to my API vacantes')
 })
-app.use('/api/usuarios', routes)
+app.use('/api/vacantes', routes)
 
 // server running -----------------------------------
 app.listen(app.get('port'), ()=>{
